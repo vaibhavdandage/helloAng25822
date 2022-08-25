@@ -7,4 +7,4 @@ RUN npm run build --prod
 
  
 FROM nginx:1.15.8-alpine
-COPY --from=builder /usr/src/app/dist/AWSCICD/ /usr/share/nginx/html
+COPY --from=builder /usr/src/app/dist/first-angular-app/ /usr/share/nginx/html
